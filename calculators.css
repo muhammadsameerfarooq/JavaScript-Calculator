@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(182, 253, 182);
+}
+
+h1{
+    color: green;
+}
+table,
+th,
+td {
+    border: 1px solid white;
+    border-radius: 6px;
+}
+td{
+    width: 4em;
+    background-color: green;
+}
+button {
+    width: 100%;
+    height: 2em;
+    background-color: transparent;
+    border-radius: 6px;
+    font-size: large;
+    color: white;
+    border: 1px solid white;    
+}
+table{
+    background-color: white;
+    padding: .6em;
+    border: 4px solid green;
+    width: 20%;
+}
+#calculatorValue{
+    width: 19.3%;
+    height: 2em;
+    background-color: rgb(241, 238, 238);
+    font-size: large;
+    color: green;
+    border: 4px solid green;
+    border-radius: 6px;
+    padding: .2%;
+    font-weight: bold;
+}
+/* .a1
+{
+    width: 350px;
+    height: 350px;
+    border: 3px solid black;
+    margin: auto;
+    background-color: aqua;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    color: aqua;
+    font-style: bold;
+    font-style: italic;
+    background-color: blue;
+    padding: 0px;
+}
+hr{
+    border: 2px solid black;
+}
+button
+{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: yellow;
+    font-size: 30px;
+    color:  black;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+} 
+input
+{
+    width: 300px;
+    border: 3px solid black;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.main
+{
+    padding: 200px;
+   
+} */
