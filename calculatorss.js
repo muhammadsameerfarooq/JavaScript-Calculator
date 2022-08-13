@@ -16,22 +16,21 @@ var clearBtn = document.getElementById("clearBtn"),
   nineBtn = document.getElementById("nineBtn"),
   equalBtn = document.getElementById("equalBtn"),
   calculatorValue = document.getElementById("calculatorValue");
-
 //Listeners
-
 equalBtn.addEventListener("click", function () {
   if (!calculatorValue.value.length) {
-    alert("Please Enter Value To Calculate");
+    // alert(" Your Input Tag Is Empty.Enter Value To Calculate");
     return;
   }
-
+  if(isNaN(calculatorValue.value[calculatorValue.value.length-1]))
+  {
+    return;
+  }
   var operators = calculatorValue.value.replace(/[0-9]/g, "").split(""); //985+10
   var values = calculatorValue.value; //values=+
   for (let i = 0; i < operators.length; i++) {
     const currentOperator = operators[i];
-
     var currentValues = values.split(/[*/+-]+/);
-
     if (currentOperator == "+") {
       var result = parseFloat(currentValues[0]) + parseFloat(currentValues[1]);
       var str = currentValues[0] + currentOperator + currentValues[1];
@@ -86,20 +85,52 @@ nineBtn.addEventListener("click", function () {
   calculatorValue.value = calculatorValue.value + "9";
 });
 plusBtn.addEventListener("click", function () {
+  if (!calculatorValue.value.length) {
+    alert("Please Enter Value To Calculate");
+    return;
+  }
+  if(isNaN(calculatorValue.value[calculatorValue.value.length-1]))
+  {
+    return;
+  }
   calculatorValue.value = calculatorValue.value + "+";
-  currentOperator = "+";
+  
 });
 minusBtn.addEventListener("click", function () {
+  if (!calculatorValue.value.length) {
+    alert("Please Enter Value To Calculate");
+    return;
+  }
+  if(isNaN(calculatorValue.value[calculatorValue.value.length-1]))
+  {
+    return;
+  }
   calculatorValue.value = calculatorValue.value + "-";
-  currentOperator = "-";
+  
 });
 multiplyBtn.addEventListener("click", function () {
+  if (!calculatorValue.value.length) {
+    alert("Please Enter Value To Calculate");
+    return;
+  }
+  if(isNaN(calculatorValue.value[calculatorValue.value.length-1]))
+  {
+    return;
+  }
   calculatorValue.value = calculatorValue.value + "*";
-  currentOperator = "*";
+  
 });
 divideBtn.addEventListener("click", function () {
+  if (!calculatorValue.value.length) {
+    alert("Please Enter Value To Calculate");
+    return;
+  }
+  if(isNaN(calculatorValue.value[calculatorValue.value.length-1]))
+  {
+    return;
+  }
   calculatorValue.value = calculatorValue.value + "/";
-  currentOperator = "/";
+  
 });
 clearBtn.addEventListener("click", function () {
   calculatorValue.value = "";
